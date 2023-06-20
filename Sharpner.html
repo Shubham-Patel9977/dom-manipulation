@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dom Manuplation</title>
+        <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+       
+    </head>
+    <header>
+      <div class="row"  style="background-color: blue;" >
+        <div class="col-6 p-4 m-2">
+          <h1 style="text-align: center;">Item Listener</h1>
+        </div>
+        <div class="col-5 p-4 m-2">
+           <input type="text" id="filter" class="form-control " placeholder="Search Item">
+        </div>
+      </div>
+    </header>
+    <body>
+        <div class="container mt-2">
+            <div id="main" class="card card-body">
+              <h2">Add Items</h2>
+
+              <form class="form-check-inline input-group w-25" id="form1">
+                <input type="text" class="form-control" id="item" >
+                <input type="submit" class=" btn btn-dark" value="submit">
+              </form>
+              <h2>Items</h2>
+              <ul id="items" class="list-group">
+               
+                <li  class="list-group-item">Item 1 <button class="btn btn-danger btn-sm float-sm-end delete">X</button></li>
+                <li  class="list-group-item">Item 2 <button class="btn btn-danger btn-sm float-sm-end delete">X</button></li>
+                <li  class="list-group-item">Item 3 <button class="btn btn-danger btn-sm float-sm-end delete">X</button></li>
+                <li  class="list-group-item">Item 4 <button class="btn btn-danger btn-sm float-sm-end delete">X</button></li>
+                <li  class="list-group-item">Item 5 <button class="btn btn-danger btn-sm float-sm-end delete">X</button></li> 
+              </ul>
+            </div>
+
+        </div>
+        <script src="./list.js"></script>
+    </body>
+</html>
